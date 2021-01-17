@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/styles/header.css"],"names":[],"mappings":"AACA,QACI,wBAA0B,CAC1B,YAAa,CACb,iBACJ,CAEA,aACI,UACJ","file":"main.b07219f7.chunk.css","sourcesContent":["/* Navbar stle */\r\n.header {\r\n    background-color: darkblue;\r\n    padding: 40px;\r\n    text-align: center;\r\n}\r\n\r\n.Navbar-Text {\r\n    color: white;\r\n}"]}
