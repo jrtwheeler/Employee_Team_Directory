@@ -1,0 +1,10 @@
+/* Navbar stle */
+.header {
+    background-color: darkblue;
+    padding: 40px;
+    text-align: center;
+}
+
+.Navbar-Text {
+    color: white;
+}
