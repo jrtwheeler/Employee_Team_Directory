@@ -3,7 +3,7 @@ import "./style.css";
 
 function Table(props) {
   return (
-    <table class="table table-striped">
+    <table className="table table-striped">
       <thead>
         <tr>
           <th scope="col">Name</th>

@@ -3,7 +3,7 @@ const BASEURL = "https://randomuser.me/api/?results=25&inc=name,email,dob,phone,
 
 // Export an object with a "search" method that searches the Giphy API for the passed query
 export default {
-  getEmployeeDatabase: function() {
+  getEmployeeDatabase: function () {
     return axios.get(BASEURL);
   }
 };

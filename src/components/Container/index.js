@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Row from "../Row";
 import Col from "../Col";
 import Table from "../Table";
-import SearchForm from "../SearchForm";
+import Form from "../Form";
 import API from "../../utils/API";
 
 class Container extends Component {
@@ -22,17 +22,17 @@ class Container extends Component {
     return (
       // <Container>
         <Row>
+          <Col size="md-4">
+            <Form
+              value={this.state.search}
+              handleInputChange={this.handleInputChange}
+              handleFormSubmit={this.handleFormSubmit}
+            />
+          </Col>
           <Col size="md-12">
             <Table
               results={this.state.results}
             />
-          </Col>
-          <Col size="md-4">
-            {/* <SearchForm
-              value={this.state.search}
-              handleInputChange={this.handleInputChange}
-              handleFormSubmit={this.handleFormSubmit}
-            /> */}
           </Col>
         </Row>
       // </Container>
