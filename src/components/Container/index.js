@@ -22,13 +22,11 @@ class Container extends Component {
     return (
       // <Container>
         <Row>
-          <Col size="md-4">
             <Form
               value={this.state.search}
               handleInputChange={this.handleInputChange}
               handleFormSubmit={this.handleFormSubmit}
             />
-          </Col>
           <Col size="md-12">
             <Table
               results={this.state.results}

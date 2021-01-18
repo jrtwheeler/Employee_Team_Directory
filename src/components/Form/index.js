@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Col from "../Col";
 import "./style.css";
 
 class Form extends Component {
@@ -24,7 +25,6 @@ class Form extends Component {
     event.preventDefault();
 
     // Alert the user their first and last name, clear `this.state.firstName` and `this.state.lastName`, clearing the inputs
-    alert(`Hello ${this.state.firstName} ${this.state.lastName}`);
     this.setState({
       firstName: "",
       lastName: ""
@@ -34,28 +34,22 @@ class Form extends Component {
   render() {
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
-      <div>
-        <p>
-          Hello {this.state.firstName} {this.state.lastName}
-        </p>
-        <form className="form">
+      
+        <Col size="md-4">
+          <div className="form">
+        <form>
           <input
             value={this.state.firstName}
             name="firstName"
             onChange={this.handleInputChange}
             type="text"
-            placeholder="First Name"
-          />
-          <input
-            value={this.state.lastName}
-            name="lastName"
-            onChange={this.handleInputChange}
-            type="text"
-            placeholder="Last Name"
+            placeholder="Search the database for an employee"
           />
           <button onClick={this.handleFormSubmit}>Submit</button>
         </form>
-      </div>
+        </div>
+        </Col>
+      
     );
   }
 }
