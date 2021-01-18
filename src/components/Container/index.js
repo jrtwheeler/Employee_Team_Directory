@@ -4,10 +4,11 @@ import Row from "./Row";
 import Col from "./Col";
 import Card from "./Card";
 import SearchForm from "./SearchForm";
-import MovieDetail from "./EmployeeDetail";
+import TableHeader from "./TableHeader";
+import Table from "./Table";
 import API from "../utils/API";
 
-class EmployeeContainer extends Component {
+class Container extends Component {
   state = {
     result: {},
     search: ""
@@ -28,12 +29,14 @@ class EmployeeContainer extends Component {
             <Card
               heading={this.state.result.Title || "Search for an Employee"}
             >
-              <MovieDetail
-                title={this.state.result.Title}
-                src={this.state.result.Poster}
-                director={this.state.result.Director}
-                genre={this.state.result.Genre}
-                released={this.state.result.Released}
+              <TableHeader />
+              <Table         
+                src={this.state.result.picture.thumbnail}
+                firstname={this.state.results.name.first}
+                firstname={this.state.results.name.last}
+                email={this.state.results.email}
+                phone={this.state.results.phone}
+                dob={this.state.results.dob}
               />
             </Card>
           </Col>
@@ -52,4 +55,4 @@ class EmployeeContainer extends Component {
   }
 }
 
-export default EmployeeContainer;
+export default Container;

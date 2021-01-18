@@ -4,10 +4,15 @@ import "./style.css";
 function Table(props) {
     return (
         <ul className="list-group">
-          {props.groceries.map(item => (
-            <li className="list-group-item" key={item.id}>
-              {item.name}
-            </li>
+          {props.state.result.map(item => (
+            <tr key={id}>
+            <td>{props.src}</td>
+            <td>{props.firstname}</td>
+            <td>{props.lastname}</td>
+            <td>{props.email}</td>
+            <td>{props.phone}</td>
+            <td>{props.dob}</td>
+         </tr>
           ))}
         </ul>
       );
