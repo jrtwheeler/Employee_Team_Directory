@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Row from "../Row";
 import Col from "../Col";
-import TableHeader from "../TableHeader";
 import Table from "../Table";
 import SearchForm from "../SearchForm";
 import API from "../../utils/API";
@@ -23,8 +22,7 @@ class Container extends Component {
     return (
       // <Container>
         <Row>
-          <Col size="md-8">
-            <TableHeader />
+          <Col size="md-12">
             <Table
               results={this.state.results}
             />
