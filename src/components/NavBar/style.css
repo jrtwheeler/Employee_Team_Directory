@@ -1,6 +1,7 @@
 /* Navbar stle */
 .header {
     background-color: darkblue;
+    background-image: url("img.webp");
     padding: 40px;
     text-align: center;
 }
