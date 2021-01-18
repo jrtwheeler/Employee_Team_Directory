@@ -3,18 +3,18 @@ import "./style.css";
 
 function Table(props) {
     return (
-        <ul className="list-group">
-          {props.state.result.map(item => (
-            <tr key={id}>
-            <td>{props.src}</td>
-            <td>{props.firstname}</td>
-            <td>{props.lastname}</td>
-            <td>{props.email}</td>
-            <td>{props.phone}</td>
-            <td>{props.dob}</td>
+        <div>
+          {props.results.map(result => (
+            <tr>
+            <td>{result.name.title} {result.name.first} {result.name.last}</td>
+            <td>{result.email}</td>
+            <td>{result.phone}</td>
+            <td>{result.email}</td>
+            <td>{result.phone}</td>
+            <td>{result.dob.date}</td>
          </tr>
           ))}
-        </ul>
+        </div>
       );
 }
 

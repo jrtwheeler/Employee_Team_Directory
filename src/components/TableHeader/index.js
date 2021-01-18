@@ -1,9 +1,7 @@
 import React from "react";
 
 function TableHeader() {
-    return header.map((key, index) => {
-       return <th key={id}>{key.toUpperCase()}</th>
-    })
+       return <th></th>
  }
 
  export default TableHeader;
