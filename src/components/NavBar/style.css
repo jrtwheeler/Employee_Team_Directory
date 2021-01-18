@@ -2,6 +2,7 @@
 .header {
     background-color: darkblue;
     background-image: url("img.webp");
+    background-repeat: repeat;
     padding: 40px;
     text-align: center;
 }

@@ -16,7 +16,7 @@ function Table(props) {
         <tbody>
           <tr>
             <td>{result.name.title} {result.name.first} {result.name.last}</td>
-            <td>{result.email}</td>
+            <td><a href="url">{result.email}</a></td>
             <td>{result.phone}</td>
             <td>{result.dob.date}</td>
           </tr>
