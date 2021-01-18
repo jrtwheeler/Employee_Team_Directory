@@ -1,11 +1,12 @@
 import React from "react";
 import "./style.css"
 
-function NavBar() {
+function NavBar(props) {
   return (
     <header className="header">
-      <h2 className="Navbar-Text">Employee Directory</h2>
-      <p className="Navbar-Text">Click on carrots to filter on heading or use the search directory to narrow your results</p>
+      <div className="Navbar-Text">
+        {props.children}
+      </div>
     </header>
   );
 }

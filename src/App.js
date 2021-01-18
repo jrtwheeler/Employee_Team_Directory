@@ -41,14 +41,17 @@ const groceries = [
 function App() {
   return (
     <Wrapper>
-    <Router>
-      <div>
-        <NavBar />
-      </div>
-      <div>
-        <Table groceries={groceries}></Table>
-      </div>
-    </Router>
+      <Router>
+        <div>
+          <NavBar>
+            <h2>Employee Directory</h2>
+            <p>Click on carrots to filter on heading or use the search directory to narrow your results</p>
+          </NavBar>
+        </div>
+        <div>
+          <Table groceries={groceries}></Table>
+        </div>
+      </Router>
     </Wrapper>
   );
 }
