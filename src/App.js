@@ -1,21 +1,21 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import NavBar from "./components/NavBar";
+import Header from "./components/Header";
 import Wrapper from "./components/Wrapper";
-import Container from "./components/Container";
+import DataBaseContainer from "./components/DataBaseContainer";
 
 function App() {
   return (
     <Wrapper>
       <Router>
         <div>
-          <NavBar>
+          <Header>
             <h2>Employee Directory</h2>
             <p>Click on carrots to filter on heading or use the search directory to narrow your results</p>
-          </NavBar>
+          </Header>
         </div>
         <div>
-          <Container></Container>
+          <DataBaseContainer/>
         </div>
       </Router>
     </Wrapper>
