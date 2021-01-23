@@ -7,8 +7,7 @@
   * [Questions](#Questions)
   ## Description
   This react.js app uses an API call to generate a random database of employees. The database can be filtered by the search window. The page is styled with bootstrap and css. 
-  ![Web page](assets/img/portfolio-index.png)
-  ![Web page](assets/img/portfolio-portfolio.png)
+  ![Web page](webpage_detail_1.png)
   ## Usage Information
   The user can sort the employee database by entering a query in the search form. The table of employees is dynamically filtered.
   ## License
