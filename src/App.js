@@ -17,7 +17,6 @@ function App() {
         <div>
           <Header>
             <h2>Employee Directory</h2>
-            <p>Click on carrots to filter on heading or use the search directory to narrow your results</p>
           </Header>
         </div>
         <div>

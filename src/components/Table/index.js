@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function Table(props) {
+function Table(props) {  
   return (
     <table className="table table-striped">
       <thead>

@@ -3,7 +3,7 @@ import "./style.css"
 
 function NavBar(props) {
   return (
-    <header className="header">
+    <header className="jumbotron">
       <div className="Navbar-Text">
         {props.children}
       </div>

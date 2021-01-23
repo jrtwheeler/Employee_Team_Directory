@@ -1,12 +1,15 @@
 /* Navbar stle */
-.header {
-    background-color: darkblue;
-    background-image: url("img.webp");
+.jumbotron {
+    background-color: black;
+    /* background-image: url("files_stack.jpg"); */
     background-repeat: repeat;
-    padding: 40px;
+    background-size: 100% 400%;
+    padding: 0;
     text-align: center;
+    margin: 0;
+    border: black;
 }
 
 .Navbar-Text {
-    color: white;
+    color: black;
 }
